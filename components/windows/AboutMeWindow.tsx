@@ -1,4 +1,5 @@
-import { basedIn, bio, interests, socialLinks, tagline } from "@/lib/content";
+import { basedIn, interests, socialLinks, tagline } from "@/lib/content";
+import { BioText } from "@/components/BioText";
 
 export function AboutMeWindow() {
   return (
@@ -20,7 +21,7 @@ export function AboutMeWindow() {
         <p className="text-sm text-[var(--color-text-muted)]">{tagline}</p>
       </div>
 
-      <p className="max-w-sm text-sm leading-relaxed">{bio}</p>
+      <BioText className="flex max-w-sm flex-col gap-3 text-sm leading-relaxed" />
 
       <div className="flex flex-wrap justify-center gap-2">
         {interests.map((interest) => (

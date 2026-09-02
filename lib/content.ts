@@ -2,10 +2,29 @@
 // stand-in — see README.md "Placeholder checklist" for the full list of what
 // Kendra needs to supply before launch.
 
-export const bio =
-  "I help businesses achieve operational efficiency by optimizing workflow through effective documentation. I also skateboard and make art.";
+export const tagline = "Technical Writer";
 
-export const tagline = "Technical Writer"; // TODO: confirm exact tagline phrasing with Kendra
+export const bioIntro =
+  "I help businesses achieve operational efficiency through effective documentation.";
+
+export type Venture = {
+  name: string;
+  url: string;
+  description: string;
+};
+
+export const agency: Venture = {
+  name: "thewritingstudio.io",
+  url: "https://thewritingstudio.io",
+  description: "a technical writing agency",
+};
+
+// PLACEHOLDER URL — add the real link once Write Good is live.
+export const currentProject: Venture = {
+  name: "Write Good",
+  url: "#",
+  description: "a technical writing brief generator web app",
+};
 
 export const basedIn = "Salt Lake City, Utah"; // PLACEHOLDER: confirm city to show publicly
 

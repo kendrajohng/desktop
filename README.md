@@ -17,8 +17,12 @@ Open http://localhost:3000. `npm run build` produces a production build;
 
 ## What's built (Phase 1)
 
-- Wallpaper, icon grid, and 5 icons (Resume, Projects, About Me, Substack,
-  Not AI) opening draggable, stackable, closable windows.
+- A centered desktop layout: a persistent profile card (headshot, tagline,
+  bio, "more about me" link) above a row of 4 icons (Resume, Projects,
+  Substack, Not AI), all opening draggable, stackable, closable windows.
+  About Me is reachable via the profile card's link rather than its own icon
+  (matches the parinazkassemi.com reference — the persistent card already
+  covers that role).
 - Menu bar with a live clock, a live weather widget (Open-Meteo, no API key
   needed), and a static hobbies row.
 - Mobile fallback: below 768px, icons open full-screen windows instead of
@@ -39,9 +43,10 @@ this replaces the live site:
 
 - `public/resume-placeholder.pdf` — replace with the real resume PDF (keep
   the filename or update `resumeFileUrl` in `lib/content.ts`).
-- Headshot — `components/windows/AboutMeWindow.tsx` currently shows a "KJ"
-  monogram instead of a photo.
-- `tagline` in `lib/content.ts` — placeholder phrasing, confirm exact wording.
+- Headshot — `ProfileCard.tsx` and `AboutMeWindow.tsx` both currently show a
+  "KJ" monogram instead of a photo.
+- `currentProject` (Write Good) in `lib/content.ts` — has no URL yet (`#`);
+  add the real link once it's live.
 - `socialLinks` and `substackUrl` in `lib/content.ts` — all placeholder URLs
   (LinkedIn, GitHub, Instagram, Substack, email).
 - `notAiItems` in `lib/content.ts` — sample slots only; needs real skate
