@@ -1,4 +1,4 @@
-import { experience, resumeFileUrl } from "@/lib/content";
+import { experience, resumeUrl } from "@/lib/content";
 
 export function ResumeWindow() {
   return (
@@ -6,17 +6,14 @@ export function ResumeWindow() {
       <div className="flex items-center justify-between">
         <h2 className="font-heading text-lg font-bold">Kendra Johng</h2>
         <a
-          href={resumeFileUrl}
-          download
+          href={resumeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full bg-[var(--color-accent)] px-4 py-1.5 text-sm font-heading font-semibold text-white transition-opacity hover:opacity-90"
         >
-          Download PDF
+          View Resume
         </a>
       </div>
-      <p className="text-xs italic text-[var(--color-text-muted)]">
-        Placeholder resume file — replace /public/resume-placeholder.pdf with
-        Kendra&apos;s real PDF.
-      </p>
 
       <div className="flex flex-col gap-4">
         {experience.map((job) => (

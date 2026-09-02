@@ -2,6 +2,7 @@
 
 import { tagline } from "@/lib/content";
 import { BioText } from "@/components/BioText";
+import { Headshot } from "@/components/Headshot";
 import { useWindowManager } from "@/components/window/WindowManagerContext";
 
 export function ProfileCard() {
@@ -9,17 +10,7 @@ export function ProfileCard() {
 
   return (
     <div className="flex max-w-xl items-start gap-5 text-left">
-      <div
-        className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full text-2xl font-heading font-bold text-white shadow-plum"
-        style={{
-          background:
-            "linear-gradient(135deg, var(--color-accent), var(--color-accent-secondary))",
-        }}
-        aria-label="Headshot placeholder"
-        title="Headshot placeholder — replace with a real photo"
-      >
-        KJ
-      </div>
+      <Headshot size={96} />
 
       <div className="flex flex-col gap-2 pt-1">
         <p className="font-heading text-sm font-bold uppercase tracking-wide">

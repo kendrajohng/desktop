@@ -1,20 +1,11 @@
 import { basedIn, interests, socialLinks, tagline } from "@/lib/content";
 import { BioText } from "@/components/BioText";
+import { Headshot } from "@/components/Headshot";
 
 export function AboutMeWindow() {
   return (
     <div className="flex flex-col items-center gap-4 text-center">
-      <div
-        className="flex h-24 w-24 items-center justify-center rounded-full text-2xl font-heading font-bold text-white shadow-plum"
-        style={{
-          background:
-            "linear-gradient(135deg, var(--color-accent), var(--color-accent-secondary))",
-        }}
-        aria-label="Headshot placeholder"
-        title="Headshot placeholder — replace with a real photo"
-      >
-        KJ
-      </div>
+      <Headshot size={96} />
 
       <div>
         <h2 className="font-heading text-xl font-bold">Kendra Johng</h2>
@@ -52,7 +43,8 @@ export function AboutMeWindow() {
         ))}
       </div>
       <p className="text-xs italic text-[var(--color-text-muted)]">
-        Social links are placeholders — swap in real URLs in lib/content.ts.
+        LinkedIn, GitHub, Instagram, and Email are still placeholder URLs —
+        swap in real links in lib/content.ts.
       </p>
     </div>
   );

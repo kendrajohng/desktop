@@ -41,14 +41,8 @@ Real content already in `lib/content.ts` (bio, job history, clients, work
 samples). The following are placeholders and need to be swapped in before
 this replaces the live site:
 
-- `public/resume-placeholder.pdf` — replace with the real resume PDF (keep
-  the filename or update `resumeFileUrl` in `lib/content.ts`).
-- Headshot — `ProfileCard.tsx` and `AboutMeWindow.tsx` both currently show a
-  "KJ" monogram instead of a photo.
-- `currentProject` (Write Good) in `lib/content.ts` — has no URL yet (`#`);
-  add the real link once it's live.
-- `socialLinks` and `substackUrl` in `lib/content.ts` — all placeholder URLs
-  (LinkedIn, GitHub, Instagram, Substack, email).
+- `socialLinks` in `lib/content.ts` — LinkedIn, GitHub, Instagram, and email
+  are still placeholder URLs (Substack is real).
 - `notAiItems` in `lib/content.ts` — sample slots only; needs real skate
   video/art links or embeds.
 - `basedIn` in `lib/content.ts` — defaults to "Salt Lake City, Utah"; confirm

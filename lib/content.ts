@@ -19,10 +19,9 @@ export const agency: Venture = {
   description: "a technical writing agency",
 };
 
-// PLACEHOLDER URL — add the real link once Write Good is live.
 export const currentProject: Venture = {
   name: "Write Good",
-  url: "#",
+  url: "https://twpg.vercel.app",
   description: "a technical writing brief generator web app",
 };
 
@@ -111,18 +110,19 @@ export type SocialLink = {
   href: string;
 };
 
-// PLACEHOLDER URLs — swap in real profile links.
+// PLACEHOLDER URLs — LinkedIn, GitHub, Instagram, and email still need real links.
 export const socialLinks: SocialLink[] = [
   { label: "LinkedIn", href: "https://linkedin.com/in/TODO" },
   { label: "GitHub", href: "https://github.com/TODO" },
   { label: "Instagram", href: "https://instagram.com/TODO" },
-  { label: "Substack", href: "https://TODO.substack.com" },
+  { label: "Substack", href: "https://substack.com/@thewritingstudio" },
   { label: "Email", href: "mailto:TODO@example.com" },
 ];
 
-export const substackUrl = "https://TODO.substack.com"; // PLACEHOLDER
+export const substackUrl = "https://substack.com/@thewritingstudio";
 
-export const resumeFileUrl = "/resume-placeholder.pdf"; // PLACEHOLDER — replace with real PDF in /public
+export const resumeUrl =
+  "https://docs.google.com/document/d/1R02J2B4PdOZW6LLabLbuIwHCRu27pgH_/edit?usp=sharing&ouid=108211663896525231891&rtpof=true&sd=true";
 
 export const hobbies = [
   { label: "Skate", glyph: "skateboard" as const },
